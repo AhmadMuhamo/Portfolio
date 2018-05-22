@@ -79,16 +79,16 @@ section {
   border-bottom: 1px solid #3498db; }
 
 .facebook-icon:hover {
-  color: #3b5999; }
+  color: #3b5999 !important; }
 
 .linkedin-icon:hover {
-  color: #0077B5; }
+  color: #0077B5 !important; }
 
 .github-icon:hover {
-  color: #24292E; }
+  color: #24292E !important; }
 
 .instagram-icon:hover {
-  color: #e4405f; }
+  color: #e4405f !important; }
 
 .inline-icon {
   line-height: 120%;
@@ -117,13 +117,14 @@ nav {
     margin-top: 50px;
     float: left;
     font-size: 200%;
-    color: #3498db;
     font-weight: bold;
+    color: #3498db;
     cursor: default;
-    transition: color 0.3s, font-size 0.3s; }
+    transition: color 0.3s, transform 0.5s;
+    transform: scale(1); }
   nav .brand:hover {
     color: #fff;
-    font-size: 220%; }
+    transform: scale(1.2); }
   nav .main-nav {
     text-align: center;
     margin-top: 65px;
@@ -137,7 +138,7 @@ nav {
       font-weight: 200;
       border-bottom: 2px solid transparent;
       padding-bottom: 10px;
-      transition: border-bottom 0.2s; }
+      transition: border-bottom 0.3s; }
     nav .main-nav a:hover,
     nav .main-nav a:active {
       border-bottom: 2px solid #3498db; }

@@ -158,6 +158,11 @@ nav {
         color: $sub-color;
         font-weight: bold;
         cursor: default;
+        transition: color 0.3s, font-size 0.3s;
+    }
+    .brand:hover {
+        color: $main-color-bright;
+        font-size: 220%;
     }
     .main-nav {
         text-align: center;

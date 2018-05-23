@@ -1,5 +1,3 @@
-/* VARIABLES */
-/* VARIABLES */
 /* INITIALZATION */
 * {
   margin: 0;
@@ -58,8 +56,8 @@ h2:after {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
-  border-radius: 15px;
   border: 1px solid #3498db;
+    border-radius: 15px;
   color: #0b4d79;
   transition: background-color 0.3s, border 0.3s, color 0.3s; }
 
@@ -106,6 +104,7 @@ header {
   background-position: center;
   height: 100vh; }
   header .header-text {
+    color: #fff;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -143,6 +142,30 @@ nav {
     nav .main-nav a:active {
       border-bottom: 2px solid #3498db; }
 
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.945);
+  box-shadow: 0 2px 2px #ccc;
+  z-index: 9999; }
+  .sticky-nav .brand {
+    margin: 15px 0;
+    font-size: 200%;
+    font-weight: bold;
+    color: #3498db;
+    transition: color 0.3s, transform 0.5s;
+    transform: scale(1); }
+  .sticky-nav .brand:hover {
+    color: #0b4d79;
+    transform: none; }
+  .sticky-nav .main-nav {
+    margin-top: 25px; }
+    .sticky-nav .main-nav a:link,
+    .sticky-nav .main-nav a:visited {
+      color: #0b4d79; }
+
 /* HEADER */
 /* ABOUT */
 .section-about {
@@ -161,7 +184,6 @@ nav {
       opacity: 0.9;
       border-radius: 15px;
       transform: scale(0.9);
-      transition: opacity 0.5s, -webkit-transform 0.5s;
       transition: transform 0.5s, opacity 0.5s, border-radius 0.5s; }
     .section-about .about-image img:hover {
       transform: scale(1);
@@ -204,14 +226,12 @@ nav {
     font-size: 500%;
     color: #fff;
     cursor: pointer; }
-  .section-portfolio .previous:after {
+  .section-portfolio .previous:after, .section-portfolio .next:after {
     content: "\02C2";
     display: block;
     margin-top: 50%; }
   .section-portfolio .next:after {
-    content: "\02C3";
-    display: block;
-    margin-top: 50%; }
+    content: "\02C3"; }
   .section-portfolio h2 {
     text-shadow: -1px 1px #fff; }
   .section-portfolio .project {
@@ -274,14 +294,14 @@ nav {
   .section-contact textarea {
     width: 100%;
     padding: 7px;
-    border-radius: 3px;
     border: none;
+      border-radius: 3px;
     background-color: #fff;
     color: #0b4d79; }
   .section-contact textarea {
     min-width: 100%;
-    max-width: 100%;
     min-height: 100px;
+    max-width: 100%;
     max-height: 300px; }
   .section-contact .btn:hover {
     cursor: pointer;
@@ -318,7 +338,6 @@ footer a:visited {
   text-decoration: none;
   border: 0;
   color: #0b4d79;
-  -webkit-transition: color 0.2s;
   transition: color 0.2s; }
 
 footer a:hover,

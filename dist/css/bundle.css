@@ -73,7 +73,7 @@ h2:after {
   font-weight: 500; }
 
 section {
-  padding: 60px 0;
+  padding: 80px 0;
   border-bottom: 1px solid #3498db; }
 
 .facebook-icon:hover {
@@ -104,6 +104,8 @@ header {
   background-position: center;
   height: 100vh; }
   header .header-text {
+    width: 100%;
+    text-align: center;
     color: #fff;
     position: absolute;
     top: 40%;
@@ -205,7 +207,6 @@ nav {
 /* ABOUT */
 /* PORTFOLIO */
 .section-portfolio {
-  height: 100vh;
   background-image: url("../img/proj-1.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -233,7 +234,7 @@ nav {
   .section-portfolio .next:after {
     content: "\02C3"; }
   .section-portfolio h2 {
-    text-shadow: -1px 1px #fff; }
+    text-shadow: -2px 1px #000; }
   .section-portfolio .project {
     color: #fff;
     text-align: center;
@@ -241,7 +242,7 @@ nav {
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.658);
     border-radius: 30px;
-    padding: 50px 0; }
+    padding: 50px 5px; }
     .section-portfolio .project h3 {
       font-size: 150%;
       text-shadow: -3px 3px #000; }
@@ -351,12 +352,58 @@ footer p {
 
 /* FOOTER */
 /* ANIMATIONS */
-.header-animate {
+.about-text,
+.about-image,
+.project,
+.services {
   opacity: 0; }
 
-.header-animate.animated {
+.about-text.animated,
+.about-image.animated,
+.project.animated,
+.services.animated {
   opacity: 1; }
 
 /* ANIMATIONS */
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1268px) {
+  .row {
+    padding: 0 4%; }
+
+  .project .btn {
+    margin: 0 1%;
+    padding: 2% 5%; } }
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 18px; } }
+@media only screen and (max-width: 977px) {
+  .project .btn {
+    padding: 5px 10px; } }
+@media only screen and (max-width: 897px) {
+  body {
+    font-size: 16px; }
+
+  section {
+    padding: 30px 0; } }
+@media only screen and (max-width: 785px) {
+  .main-nav {
+    font-size: 100%; }
+    .main-nav li {
+      display: inline-block;
+      margin: 0 20px !important; }
+
+  .project .portfolio-btns .btn {
+    margin: 5px;
+    padding: 10px;
+    width: 80%; } }
+@media only screen and (max-width: 785px) {
+  .about-btns .btn {
+    padding: 10px 15px; } }
+@media only screen and (max-width: 686px) {
+  .footer-nav li {
+    display: block;
+    margin: 10px;
+    font-size: 120%; } }
+/* MEDIA QUERIES */
 
 /*# sourceMappingURL=bundle.css.map */

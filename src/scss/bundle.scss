@@ -105,7 +105,7 @@ h2:after {
 }
 
 section {
-    padding: 60px 0;
+    padding: 80px 0;
     border-bottom: 1px solid $sub-color;
 }
 
@@ -140,7 +140,10 @@ header {
         position: center;
     }
     height: 100vh;
+    
     .header-text {
+        width: 100%;
+        text-align: center;
         color: $main-color-bright;
         position: absolute;
         top: 40%;
@@ -274,7 +277,6 @@ nav {
 /* PORTFOLIO */
 
 .section-portfolio {
-    height: 100vh;
     background: {
         image: url($portfolio-image);
         attachment: fixed;
@@ -310,7 +312,7 @@ nav {
         content: "\02C3";
     }
     h2 {
-        text-shadow: -1px 1px $main-color-bright;
+        text-shadow: -2px 1px #000;
     }
     .project {
         color: $main-color-bright;
@@ -319,7 +321,7 @@ nav {
         margin: 0 auto;
         background-color: rgba(0, 0, 0, 0.658);
         border-radius: 30px;
-        padding: 50px 0;
+        padding: 50px 5px;
 
         h3{
             font-size: 150%;
@@ -473,11 +475,103 @@ footer p {
 /* FOOTER */
 
 /* ANIMATIONS */
-.header-animate {
+.about-text,
+.about-image,
+.project,
+.services {
     opacity: 0;
 }
 
-.header-animate.animated {
+.about-text.animated,
+.about-image.animated,
+.project.animated,
+.services.animated {
     opacity: 1;
 }
 /* ANIMATIONS */
+
+/* MEDIA QUERIES */
+
+// Larger Devices - from Medium to 1200px
+@media only screen and (max-width: 1268px) {
+    .row {
+        padding: 0 4%;
+    }
+    .project {
+        .btn {
+            margin: 0 1%;
+            padding: 2% 5%;
+        }
+    }
+}
+
+// Medium Devices (Tablets in Landscape) - from 768 to 1023px
+@media only screen and (max-width: 1023px) {
+   body {
+       font-size: 18px;
+   }
+}
+
+@media only screen and (max-width: 977px) {
+    .project {
+        .btn {
+            padding: 5px 10px;
+        }
+    }
+}
+
+// Medium Devices (Tablets in Portrait) - from 481 to 767px
+@media only screen and (max-width: 897px) {
+    body {
+        font-size: 16px;
+    }
+    section {
+        padding: 30px 0;
+    }
+
+}
+
+@media only screen and (max-width: 785px) {
+    .main-nav {
+        font-size: 100%;
+        li {
+            display: inline-block;
+            margin: 0 20px !important;
+        }
+    }
+    .project {
+        .portfolio-btns {
+            .btn {
+                margin: 5px;
+                padding: 10px;
+                width: 80%;
+            }
+        }
+
+    }
+}
+@media only screen and (max-width: 785px) {
+    .about-btns {
+        .btn {
+            padding: 10px 15px;
+        }
+    }
+}
+@media only screen and (max-width: 686px) {
+    .footer-nav {
+        ul {
+        }
+        li {
+            display: block;
+            margin: 10px;
+            font-size: 120%;
+        }
+    }
+}
+
+
+// Small Devices (Mobile Phones)
+@media only screen and (max-width: 480px) {
+   
+}
+/* MEDIA QUERIES */

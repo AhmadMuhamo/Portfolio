@@ -3768,7 +3768,7 @@ eval("var g;\r\n\r\n// This works in non-strict mode\r\ng = (function() {\r\n\tr
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nconsole.log('HELLO');\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("\n\nconsole.log('App started!');\n\nwindow.onscroll = function () {\n    var navbar = document.querySelector(\"nav\");\n    var header = document.querySelector('header').offsetHeight - 50;\n    if (window.pageYOffset >= header) {\n        navbar.classList.add(\"sticky-nav\");\n    } else {\n        navbar.classList.remove(\"sticky-nav\");\n    }\n};\n\n$('a[href*=#]:not([href=#])').click(function () {\n    if (location.pathname.replace(/^\\//, '') == this.pathname.replace(/^\\//, '') || location.hostname == this.hostname) {\n\n        var target = $(this.hash);\n        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');\n        if (target.length) {\n            $('html,body').animate({\n                scrollTop: target.offset().top\n            }, 1000);\n            return false;\n        }\n    }\n});\n\n//# sourceURL=webpack:///./src/js/index.js?");
 
 /***/ }),
 

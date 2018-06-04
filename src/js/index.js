@@ -1,3 +1,5 @@
+import '../scss/bundle.scss';
+
 console.log('App started!');
 
 window.onscroll = () => {
